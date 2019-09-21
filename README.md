@@ -15,5 +15,5 @@
 
 ## 関連
 
-[UI](https://github.com/shift-scheduler/shift_scheduler_tool)
-[シフトスケジューラー](https://github.com/shift-scheduler/shift_scheduler_tool_api_py)
+[UI](https://github.com/shift-scheduler/shift_scheduler_tool)  
+[シフトスケジューラー](https://github.com/shift-scheduler/shift_scheduler_tool_api_py)  

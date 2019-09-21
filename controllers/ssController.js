@@ -1,8 +1,10 @@
-const ssRepository = require(`${process.cwd()}/repositories/ssRepositry.js`);
-
+const fs = require('fs');
+const csv = require('csv');
 module.exports = {
-  doGet: async (req, res) => {
-    const data = await ssRepository.dummyGet('/employees');
-    res.send(JSON.stringify(data));
+  scheduler: async (req, res) => {
+    fs.createReadStream(req.file.path)
+        .pipe(csv.parse(function(err, data) {
+          console.log(data);
+        }));
   },
 };

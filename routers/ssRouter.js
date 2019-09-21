@@ -3,6 +3,6 @@ const express = require('express');
 const ssRouter = express.Router();
 const ssController = require(`${process.cwd()}/controllers/ssController.js`);
 
-ssRouter.get('/', ssController.doGet);
+ssRouter.post('/', ssController.scheduler);
 
 module.exports = ssRouter;
